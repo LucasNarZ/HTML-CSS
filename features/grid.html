@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid Practice</title>
+  </head><!--justify-content & align-content;
+  grid-template-columns: auto auto auto auto; para ter todos o mesmo tamanho;
+  
+  grid-template-rows: 80px 200px; para especificar o tamanho de cada linha;
+
+  grid-column: 1 / 5; determina que esse item começa na coluna 1 e termina no começo da coluna 5;
+
+  grid-column: 1/ span 3; determina que esse item começa na coluna 1 e tem 3 coluna de tamanho;
+
+  grid-row: 1 / 5; determina que esse item começa na linha 1 e termina no começo da linha 5;
+
+  grid-row: 1/ span 3; determina que esse item começa na linha 1 e tem 3 linhas de tamanho;
+
+  grid-area: 1 / 2 / 5 / 6; 1 e 2 representão em que linha e em que coluna começa o item respectivamente,
+  5 representa até que linha o item vai e 6 até que coluna o item vai;
+
+  grid-area: 1 / 2 /span 3 /span 2; span 3 diz que o item ocupara 3 linhas e span 2 diz que o item
+  ocupara 2 colunas.
+  -->
+  <body>
+    <div style="display: grid;
+    grid-template-columns: 100px 100px;">
+      <div style="background-color: lightblue;">
+        div 1
+      </div>
+      <div style="background-color: lightpink;">
+        div 2
+        <p>text</p>
+      </div>
+    </div>
+    <div style="margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 100px 200px;">
+      <div style="background-color: lightblue;">
+        100px
+      </div>
+      <div style="background-color: lightpink;">
+        100px
+        <p>text</p>
+      </div>
+      <div style="background-color: lightblue;">
+        200px
+      </div>
+      <div style="background-color: lightpink;">
+        100px
+      </div>
+    </div>
+
+    <div style="margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 1fr;">
+      <div style="background-color: lightblue;">
+        100px</div>
+      <div style="background-color: lightpink;">
+        100px</div>
+    </div>
+
+    <div style="margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;">
+      <div style="background-color: lightblue;">
+        1fr </div>
+      <div style="background-color: lightpink;">
+        1fr</div>
+      <div style="background-color: lightblue;">
+        1fr</div>
+    </div>
+  </body>
+</html>

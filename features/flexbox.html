@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Practice</title>
+    <style>
+      #flex{
+        border: 1px solid gray;
+        display:flex;
+        flex-direction:row;
+        height: 70px;
+        justify-content: center;
+        align-items: center;
+      }
+      #div1{
+        background-color:lightblue;
+        width: 300px;
+      }
+      #div2{
+        background-color:lightpink;
+        width: 300px;
+        align-self: flex-end;
+      }
+      #div3{
+        background-color: lightblue;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="flex">
+      <div id="div1">div1 text</div>
+      <div id="div2">div2</div>
+      <div id="div3">div3</div>
+    </div>
+  </body>
+</html>

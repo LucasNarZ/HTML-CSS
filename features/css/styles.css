@@ -1,0 +1,22 @@
+/* Error: Missing argument $background-color.
+ *   ,--> sass\styles.sass
+ * 6 |     @include Header(40px)
+ *   |     ^^^^^^^^^^^^^^^^^^^^^ invocation
+ *   '
+ *   ,--> sass\functions.sass
+ * 1 | @mixin Header($height, $background-color)
+ *   |        ================================== declaration
+ *   '
+ *   sass\styles.sass 6:5  Header()
+ *   sass\styles.sass 6:5  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Missing argument $background-color.\a   \250c \2500 \2500 > sass\\styles.sass\a 6 \2502      @include Header(40px)\d\a   \2502      ^^^^^^^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > sass\\functions.sass\a 1 \2502  @mixin Header($height, $background-color)\d\a   \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   sass\\styles.sass 6:5  Header()\a   sass\\styles.sass 6:5  root stylesheet";
+}

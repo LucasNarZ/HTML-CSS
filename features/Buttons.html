@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Buttons Practice</title>
+    <link rel="stylesheet" href="buttons.css">
+    <style>
+      .subscribe_button{
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    font-family: Arial;
+    font-size: 14px;
+    padding: 10px 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 12px;
+    vertical-align: top;
+    
+    transition: opacity 0.15s;
+  }
+  .subscribe_button:hover{
+    opacity: 0.8;
+  }
+  .subscribe_button:active{
+    opacity: 0.5;
+  }
+  
+  .Join_button{
+    background-color: white;
+    color: #065fd4;
+    border-radius: 5px;
+    border-color: #065fd4;
+    cursor: pointer;
+    font-size: large;
+    border-style: solid;
+    padding: 9px 15px;
+    vertical-align: top;
+    transition: background-color 0.15s,
+    color 0.15s;
+  }
+  .Join_button:hover{
+    background-color: #065fd4;
+    color: white;
+  }
+  .Join_button:active{ 
+    opacity: 0.8;
+  }
+
+  .tweet_button{
+    background-color: #1d9bf0;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    vertical-align: top;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: box-shadow 0.15s;
+    }
+  .tweet_button:hover{
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.15) ;
+  }
+    </style>
+  </head>
+  <body>
+    <Button class="subscribe_button">
+      SUBSCRIBE
+    </Button>
+    
+    <Button class="Join_button">
+      JOIN
+    </Button>
+    
+    <Button class="tweet_button">
+        Tweet
+    </Button>
+  </body>
+</html>

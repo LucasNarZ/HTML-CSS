@@ -1,0 +1,15 @@
+@import "functions.sass"
+    
+
+@include reset()
+div
+    @include Header(40px)
+    background-color: green
+    transition: background-color 0.15s
+    p
+        background-color: blue
+        &:hover
+            background-color: black
+
+    &:hover
+        background-color: red

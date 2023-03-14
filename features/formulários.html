@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <label for="text">Nome:</label>
+            <input type="text"> <br>
+            <label for="text">Idade:</label>
+            <input type="text">
+        </fieldset>
+        <fieldset>
+            <legend>Dados Profissionais:</legend>
+            <label>Escolaridade:
+                <select name="escolaridade" id="escolaridade">
+                    <option value="EM">Ensino médio</option>
+                    <option value="EF">Ensino Fundamental</option>
+                </select>
+            </label> <br>
+            <label>Cargo:
+                <input type="radio" name="cargo" value="1"/>Gerencia
+                <input type="radio" name="cargo" value="2"/>CEO
+                <input type="radio" name="cargo" value="3"/>Funcionario
+            </label> <br>
+            <label>Sua área:</label>
+            <input type="checkbox" name="area2" value="eng"/>Engenharia
+            <input type="checkbox" name="area2" value="bio"/>Biologia
+            <input type="checkbox" name="area3" value="fisi"/>Física
+            <p>Observaçôes:</p>
+                <textarea name="obs" id="obs" cols="30" rows="10"></textarea> 
+        </fieldset>
+
+    </form>
+</body>
+</html>
