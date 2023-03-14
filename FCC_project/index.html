@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head lang="pt-br">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">                       
+    <meta name="description" content="Survey_Form">
+    <meta name="keywords" content="Survey, Form, HTML, CSS">
+    <meta name="author" content="Lucas NZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+        <header>
+          <h1 id="title">freeCodeCamp Survey Form</h1>
+          <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <form id="survey-form" class="form" action="">
+          <label id="name-label">Name</label><br>
+          <input required id="name" type="text" placeholder="Enter You Name"><br>
+          <label id="email-label">Email</label><br>
+          <input required id="email" type="email" placeholder="Enter Your Email"><br>
+          <label id="number-label">Age</label><br>
+          <input id="number" type="number" placeholder="Age" min=18 max=100>
+  
+          <p>Which option best describes your current role?</p>
+          <select name="current_role" id="dropdown">
+            <option selected="selected" disabled="disabled">Select a current role</option>
+            <option value="student">Student</option>
+            <option value="full_worker">Full Time Worker</option>
+            <option value="full_learner">Full Time Learner</option>
+            <option value="Prefer_not">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+  
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <input type="radio" id="rec_defi" name="rec_quest" value="Definitely">
+          <label for="rec_defi">Definitely</label><br>
+          <input type="radio" id="rec_maybe" name="rec_quest" value="Maybe">
+          <label for="rec_maybe">Maybe</label><br>
+          <input type="radio" id="rec_not_sure" name="rec_quest" value="Not sure">
+          <label for="rec_not_sure">Not sure</label><br>
+  
+          <p>What is your favorite feature of freeCodeCamp?</p>
+          <select name="fav_fea" id="fav_fea">
+            <option selected="selected" disabled="disabled">Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open_source">open Source</option>
+          </select>
+  
+          <p>What would you like to see improved? (Check all that apply)</p>
+          <input type="checkbox" class="checkbox" id="front_end" name="improvements" value="front_end_lang">
+          <label for="">Front-End Projects</label><br>
+          <input type="checkbox" class="checkbox" id="back_end" name="improvements" value="back_end_lang">
+          <label for="">Back-End Projects</label><br>
+          <input type="checkbox" class="checkbox" id="data_visualization" name="improvements" value="data_visualization_lang">
+          <label for="">Data Visualization</label><br>
+          <input type="checkbox" class="checkbox" id="challenges" name="improvements" value="challenges_lang">
+          <label for="">Challenges</label><br>
+          <input type="checkbox" class="checkbox" id="open_source_comu" name="improvements" value="open_source_community_lang">
+          <label for="">Open Source Community</label><br>
+          <input type="checkbox" class="checkbox" id="gitter_helper" name="improvements" value="gitter_helper_lang">
+          <label for="">Gitter help rooms</label><br>
+          <input type="checkbox" class="checkbox" id="videos" name="improvements" value="videos_lang">
+          <label for="">Videos</label><br>
+          <input type="checkbox" class="checkbox" id="city_meetups" name="improvements" value="city_meetups_lang">
+          <label for="">City Meetups</label><br>
+          <input type="checkbox" class="checkbox" id="wiki" name="improvements" value="wiki_lang">
+          <label for="">Wiki</label><br>
+          <input type="checkbox" class="checkbox" id="forums" name="improvements" value="forums_lang">
+          <label for="">Forum</label><br>
+          <input type="checkbox" class="checkbox" id="addtional_courses" name="improvements" value="addtional_courses_lang">
+          <label for="">Additional Courses</label><br>
+  
+          <p>Any comments or suggestions?</p>
+          <textarea name="comments/suggestions" id="comments-suggestions" cols="100%" rows="7"
+          placeholder="Enter your comments here..."></textarea><br>
+  
+          <input type="submit" id="submit">
+        </form>
+    </div>
+  </body>
+</html>

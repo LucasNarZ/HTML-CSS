@@ -1,0 +1,75 @@
+body{
+  background-image: 
+  linear-gradient(rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ),
+  url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-repeat: no-repeat;
+  margin: 0;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 21px;
+}
+.container{
+  min-width: 320px;
+  max-width: 1000px;
+}
+@media (min-width:520px){
+  body{
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width:320px) and (max-width: 620px){
+  body{
+    display: block;
+  }
+}
+form{
+  background-color: rgba(27, 27, 50, 0.8);
+  z-index: 0;
+  padding: 20px;
+}
+header{
+  z-index: 1;
+}
+#title, #description{
+  display: flex;
+  justify-content: center;
+}
+#name, #email, #number{
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 2px;
+  margin: 8px 0 25px 0;
+}
+
+#name::placeholder,
+#email::placeholder,
+#number::placeholder{
+  font-size: 15px;
+}
+#dropdown, #fav_fea{
+  min-width: 100%;
+  height: 37px;
+}
+input[type=checkbox], input[type=radio]{
+  transform: scale(1.5);
+}
+#comments-suggestions::placeholder{
+  font-size: 135%;
+}
+#submit{
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  background-color: #37af65;
+  border: none;
+  color: white;
+}
+#comments-suggestions{
+  width: 100%;
+}
